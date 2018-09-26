@@ -6,7 +6,7 @@
 /*   By: afrangio <afrangio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/28 20:35:11 by afrangio          #+#    #+#             */
-/*   Updated: 2017/12/19 18:39:47 by afrangio         ###   ########.fr       */
+/*   Updated: 2018/09/26 14:35:02 by afrangio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,5 +79,7 @@ int				get_next_line(int fd, char **line)
 	*line = copy_until_backslash(&suite[fd]);
 	if (ft_strlen(*line) || ft_strlen(suite[fd]) || lu > 0)
 		lu = 1;
+	else
+		free(suite[fd]);
 	return (lu);
 }
