@@ -6,7 +6,7 @@
 #    By: angelo <angelo@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/11/21 02:00:39 by afrangio          #+#    #+#              #
-#    Updated: 2018/10/22 00:46:36 by angelo           ###   ########.fr        #
+#    Updated: 2018/10/22 00:52:12 by angelo           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -109,12 +109,12 @@ $(NAME): $(OFILES)
 
 %.o: %.c $(INCLUDES)
 	$(CC) -c $(CFLAGS) -Iincludes -o $@ $<
-	
+
 clean:
 	@/bin/rm -f $(OFILES)
 
 fclean: clean
-	@/bin/rm -f $(NAME) test
+	@/bin/rm -f $(NAME)
 
 re: fclean all
 
