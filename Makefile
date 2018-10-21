@@ -3,13 +3,14 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: afrangio <afrangio@student.42.fr>          +#+  +:+       +#+         #
+#    By: angelo <angelo@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/11/21 02:00:39 by afrangio          #+#    #+#              #
-#    Updated: 2018/09/06 18:02:47 by afrangio         ###   ########.fr        #
+#    Updated: 2018/10/22 00:46:36 by angelo           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
+SLEEP		?= 0.10 
 CC			= gcc
 CFLAGS		= -Wall -Wextra -Werror
 NAME		= libft.a
@@ -87,106 +88,31 @@ CFILES		= 	srcs/io/ft_putchar.c\
 				srcs/string/ft_strsub.c\
 				srcs/string/ft_strtrim.c\
 				srcs/string/ft_tolower.c\
-				srcs/string/ft_toupper.c\
+				srcs/string/ft_toupper.c
 
-OFILES		=	ft_atoi.o\
-				ft_bzero.o\
-				ft_isalnum.o\
-				ft_isalpha.o\
-				ft_isascii.o\
- 				ft_isdigit.o\
-				ft_isprint.o\
-				ft_isspace.o\
-				ft_itoa.o\
-				ft_itoa_base.o\
-				ft_log.o\
-				ft_lstadd.o\
-				ft_lstdel.o\
-				ft_lstdelone.o\
-				ft_lstiter.o\
-				ft_lstmap.o\
-				ft_lstnew.o\
-				ft_max.o\
-				ft_memalloc.o\
-				ft_memccpy.o\
-				ft_memchr.o\
-				ft_memcmp.o\
-				ft_memcpy.o\
-				ft_memdel.o\
-				ft_memmove.o\
-				ft_memset.o\
-				ft_min.o\
-				ft_pow.o\
-				ft_putchar_fd.o\
-				ft_putendl.o\
-				ft_putendl_fd.o\
-				ft_putnbr.o\
-				ft_putnbr_fd.o\
-				ft_putstr.o\
-				ft_putstr_fd.o\
-				ft_putwchar.o\
-				ft_putwchar_fd.o\
-				ft_realloc.o\
-				ft_stacknew.o\
-				ft_stackpop.o\
-				ft_stackpush.o\
-				ft_strcat.o\
-				ft_strchr.o\
-				ft_strclr.o\
-				ft_strcmp.o\
-				ft_strcpy.o\
-				ft_strdel.o\
-				ft_strdup.o\
-				ft_strequ.o\
-				ft_striter.o\
-				ft_striteri.o\
-				ft_strjoin.o\
-				ft_strlcat.o\
-				ft_strlen.o\
-				ft_strmap.o\
-				ft_strmapi.o\
-				ft_strncat.o\
-				ft_strncmp.o\
-				ft_strncpy.o\
-				ft_strnequ.o\
-				ft_strnew.o\
-				ft_strnstr.o\
-				ft_strrchr.o\
-				ft_strsplit.o\
-				ft_strstr.o\
-				ft_strsub.o\
-				ft_strtrim.o\
-				ft_swap.o\
-				ft_tolower.o\
-				ft_toupper.o\
-				ft_ulog.o\
-				ft_putchar.o\
-				ft_putstrlen.o\
-				ft_putstrlen_fd.o\
-				get_next_line.o\
+OFILES		=	${CFILES:.c=.o}
+
+INCLUDES		=	includes/get_next_line.h\
+					includes/ioft.h\
+					includes/libft.h\
+					includes/listft.h\
+					includes/mathsft.h\
+					includes/memft.h\
+					includes/stringft.h
+
 
 all: $(NAME)
 
-$(NAME): $(CFILES)	includes/get_next_line.h includes/ioft.h\
-					includes/libft.h includes/listft.h includes/mathsft.h includes/memft.h includes/stringft.h
-	cd srcs/
-	$(CC) -c $(CFILES) $(CFLAGS) -Iincludes
+$(NAME): $(OFILES)
 	ar rcs $(NAME) $(OFILES)
 	ranlib $(NAME)
 
-debug:
-	cd srcs/
-	$(CC) -g -c $(CFILES)
-	ar rcs $(NAME) $(OFILES)
-	ranlib $(NAME)
-
-test:
-	cd srcs
-	$(CC) -g main.c\
-	 $(CFILES) -o test
-
+%.o: %.c $(INCLUDES)
+	$(CC) -c $(CFLAGS) -Iincludes -o $@ $<
+	
 clean:
 	@/bin/rm -f $(OFILES)
+
 fclean: clean
 	@/bin/rm -f $(NAME) test
 
