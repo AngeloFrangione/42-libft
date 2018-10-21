@@ -63,7 +63,6 @@ char			**ft_strsplit(char const *s, char c)
 
 	if (!s)
 		return (NULL);
-	nbl = 0;
 	nbl = ft_count(s, c);
 	if (!(tab = (char **)malloc(sizeof(char *) * (nbl + 1))))
 		return (NULL);
