@@ -6,7 +6,7 @@
 /*   By: afrangio <afrangio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/20 16:52:46 by afrangio          #+#    #+#             */
-/*   Updated: 2018/04/20 17:27:54 by afrangio         ###   ########.fr       */
+/*   Updated: 2018/11/16 18:59:27 by afrangio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,5 +31,6 @@ void			*ft_memset(void *b, int c, size_t len);
 void			*ft_realloc(char *mem, size_t size);
 void			ft_swap(int *a, int *b);
 void			*ft_memrealloc(void *mem, size_t previous, size_t size);
+void			ft_memlcat(void *dst, const void *src, size_t start, size_t size);
 
 #endif
