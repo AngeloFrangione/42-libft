@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: angelo <angelo@student.42.fr>              +#+  +:+       +#+         #
+#    By: afrangio <afrangio@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/11/21 02:00:39 by afrangio          #+#    #+#              #
-#    Updated: 2018/10/22 00:52:12 by angelo           ###   ########.fr        #
+#    Updated: 2018/11/20 15:50:03 by afrangio         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,15 +26,6 @@ CFILES		= 	srcs/io/ft_putchar.c\
 				srcs/io/ft_putwchar.c\
 				srcs/io/ft_putwchar_fd.c\
 				srcs/io/get_next_line.c\
-				srcs/list/ft_lstadd.c\
-				srcs/list/ft_lstdel.c\
-				srcs/list/ft_lstdelone.c\
-				srcs/list/ft_lstiter.c\
-				srcs/list/ft_lstmap.c\
-				srcs/list/ft_lstnew.c\
-				srcs/list/ft_stacknew.c\
-				srcs/list/ft_stackpop.c\
-				srcs/list/ft_stackpush.c\
 				srcs/maths/ft_log.c\
 				srcs/maths/ft_max.c\
 				srcs/maths/ft_min.c\
@@ -94,7 +85,6 @@ OFILES		=	${CFILES:.c=.o}
 INCLUDES		=	includes/get_next_line.h\
 					includes/ioft.h\
 					includes/libft.h\
-					includes/listft.h\
 					includes/mathsft.h\
 					includes/memft.h\
 					includes/stringft.h

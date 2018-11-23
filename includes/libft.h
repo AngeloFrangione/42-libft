@@ -6,7 +6,7 @@
 /*   By: afrangio <afrangio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/09 16:01:41 by afrangio          #+#    #+#             */
-/*   Updated: 2018/04/20 17:26:05 by afrangio         ###   ########.fr       */
+/*   Updated: 2018/11/20 15:47:42 by afrangio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@
 # include <stdio.h>
 # include <wchar.h>
 # include "ioft.h"
-# include "listft.h"
 # include "mathsft.h"
 # include "memft.h"
 # include "stringft.h"
