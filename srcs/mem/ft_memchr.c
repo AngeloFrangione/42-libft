@@ -6,7 +6,7 @@
 /*   By: afrangio <afrangio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/11 16:20:29 by afrangio          #+#    #+#             */
-/*   Updated: 2017/11/22 18:48:23 by afrangio         ###   ########.fr       */
+/*   Updated: 2018/11/23 20:23:47 by afrangio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	{
 		if (((unsigned char*)s)[i] == (unsigned char)c)
 		{
-			 return ((void *)(&(((char*)s)[i])));
+			return ((void *)(&(((char*)s)[i])));
 		}
 		i++;
 	}
