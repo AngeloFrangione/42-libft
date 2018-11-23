@@ -6,7 +6,7 @@
 /*   By: afrangio <afrangio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/28 20:35:14 by afrangio          #+#    #+#             */
-/*   Updated: 2017/11/30 17:45:47 by afrangio         ###   ########.fr       */
+/*   Updated: 2018/11/23 19:57:59 by afrangio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,10 @@
 
 # include <fcntl.h>
 # include <limits.h>
+
+# ifdef __linux__
+#  define OPEN_MAX FOPEN_MAX
+# endif
 
 # define BUFF_SIZE 20
 
