@@ -6,7 +6,7 @@
 /*   By: afrangio <afrangio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/20 16:52:50 by afrangio          #+#    #+#             */
-/*   Updated: 2019/01/21 04:22:30 by afrangio         ###   ########.fr       */
+/*   Updated: 2019/01/21 04:38:30 by afrangio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,7 @@ size_t			ft_strlcat(char *dst, const char *src, size_t size);
 char			*ft_strncat(char *s1, const char *s2, size_t n);
 char			*ft_strnstr(const char *hay, const char *needle, size_t len);
 void			ft_strclr(char *s);
-int				ft_indexof(char *s, char c)
+int				ft_indexof(char *s, char c);
 
 /*
 ** other

@@ -6,7 +6,7 @@
 #    By: afrangio <afrangio@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/11/21 02:00:39 by afrangio          #+#    #+#              #
-#    Updated: 2018/11/20 15:50:03 by afrangio         ###   ########.fr        #
+#    Updated: 2019/01/21 04:41:06 by afrangio         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -61,6 +61,7 @@ CFILES		= 	srcs/io/ft_putchar.c\
 				srcs/string/search/ft_strlcat.c\
 				srcs/string/search/ft_strncat.c\
 				srcs/string/search/ft_strnstr.c\
+				srcs/string/search/ft_indexof.c\
 				srcs/string/ft_strclr.c\
 				srcs/string/ft_strcpy.c\
 				srcs/string/ft_strdel.c\
