@@ -6,7 +6,7 @@
 /*   By: afrangio <afrangio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/20 16:52:50 by afrangio          #+#    #+#             */
-/*   Updated: 2019/01/21 04:38:30 by afrangio         ###   ########.fr       */
+/*   Updated: 2019/01/21 07:44:48 by afrangio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,8 @@ int				ft_isascii(int c);
 int				ft_isdigit(int c);
 int				ft_isprint(int c);
 int				ft_isspace(int c);
+int				is_number(char *str);
+
 /*
 ** comparaisons
 */

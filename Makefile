@@ -6,7 +6,7 @@
 #    By: afrangio <afrangio@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/11/21 02:00:39 by afrangio          #+#    #+#              #
-#    Updated: 2019/01/21 04:41:06 by afrangio         ###   ########.fr        #
+#    Updated: 2019/01/21 07:45:30 by afrangio         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -48,6 +48,7 @@ CFILES		= 	srcs/io/ft_putchar.c\
 				srcs/string/check/ft_isdigit.c\
 				srcs/string/check/ft_isprint.c\
 				srcs/string/check/ft_isspace.c\
+				srcs/string/check/ft_isnumber.c\
 				srcs/string/comparaisons/ft_strcmp.c\
 				srcs/string/comparaisons/ft_strequ.c\
 				srcs/string/comparaisons/ft_strncmp.c\
