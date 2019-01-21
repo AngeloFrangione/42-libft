@@ -6,13 +6,13 @@
 /*   By: afrangio <afrangio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/01/21 07:43:58 by afrangio          #+#    #+#             */
-/*   Updated: 2019/01/21 07:44:34 by afrangio         ###   ########.fr       */
+/*   Updated: 2019/01/21 08:05:38 by afrangio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		is_number(char *str)
+int		ft_isnumber(char *str)
 {
 	int		i;
 
