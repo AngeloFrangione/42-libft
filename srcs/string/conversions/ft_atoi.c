@@ -6,7 +6,7 @@
 /*   By: afrangio <afrangio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/13 18:59:57 by afrangio          #+#    #+#             */
-/*   Updated: 2018/10/14 12:16:08 by afrangio         ###   ########.fr       */
+/*   Updated: 2019/02/13 03:28:40 by afrangio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ int		ft_atoi(const char *str)
 long	ft_atol(const char *str)
 {
 	long	chiffre;
-	int		i;
+	long	i;
 	long	signe;
 
 	i = 0;
