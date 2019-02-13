@@ -6,7 +6,7 @@
 /*   By: afrangio <afrangio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/20 16:52:50 by afrangio          #+#    #+#             */
-/*   Updated: 2019/02/13 03:29:04 by afrangio         ###   ########.fr       */
+/*   Updated: 2020/05/12 02:31:30 by afrangio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ char			*ft_strstr(const char *haystack, const char *needle);
 int				ft_atoi(const char *str);
 long			ft_atol(const char *str);
 
-char			*ft_itoa(intmax_t n);
+char			*ft_itoa(intmax_t n, size_t size, char *r);
 char			*ft_itoa_base(intmax_t n, int b, int capslock);
 char			*ft_uitoa_base(uintmax_t n, int b, int capslock);
 /*

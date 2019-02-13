@@ -10,7 +10,7 @@
 #                                                                              #
 # **************************************************************************** #
 
-CC			= gcc
+CC		= gcc -g
 CFLAGS		= -Wall -Wextra -Werror
 NAME		= libft.a
 CFILES		= 	srcs/io/ft_putchar.c\
