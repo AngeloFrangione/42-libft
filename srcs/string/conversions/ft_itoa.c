@@ -30,7 +30,7 @@ static char		*ft_itoa_null(intmax_t n)
 	n = n * (n > 0) - n * (n < 0);
 	while (n)
 	{
-		*--ptr="0123456789"[n % 10];
+		*--ptr = "0123456789"[n % 10];
 		n /= 10;
 	}
 	if (sign)
@@ -43,8 +43,8 @@ char			*ft_itoa(intmax_t n, size_t size, char *r)
 	uint8_t	sign;
 
 	sign = (n < 0);
-	if(!r)
-		return ft_itoa_null(n);
+	if (!r)
+		return (ft_itoa_null(n));
 	r += size - 1;
 	*--r = 0;
 	if (!n)
@@ -55,7 +55,7 @@ char			*ft_itoa(intmax_t n, size_t size, char *r)
 	n = n * (n > 0) - n * (n < 0);
 	while (n)
 	{
-		*--r="0123456789"[n % 10];
+		*--r = "0123456789"[n % 10];
 		n /= 10;
 	}
 	if (sign)
