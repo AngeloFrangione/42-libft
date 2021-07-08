@@ -6,9 +6,15 @@
 #    By: afrangio <afrangio@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/11/21 02:00:39 by afrangio          #+#    #+#              #
-#    Updated: 2019/01/21 07:45:30 by afrangio         ###   ########.fr        #
+#    Updated: 2021/07/08 12:28:20 by afrangio         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
+
+_RED=\033[31m
+_GREEN=\033[32m
+_BLUE=\033[34m
+_BOLD=\033[1m
+_DEFAULT=\033[0m
 
 CC		= gcc -g
 CFLAGS		= -Wall -Wextra -Werror
@@ -93,6 +99,7 @@ INCLUDES		=	includes/get_next_line.h\
 
 
 all: $(NAME)
+	@printf "${_BOLD}${_BLUE}[$(NAME) ${_GREEN}ok${_BLUE}]${_DEFAULT}\n"
 
 $(NAME): $(OFILES)
 	ar rcs $(NAME) $(OFILES)
@@ -106,6 +113,8 @@ clean:
 
 fclean: clean
 	@/bin/rm -f $(NAME)
+	@printf "${_BOLD}${_BLUE}[$(NAME)] ${_RED}Project entirely cleared${_DEFAULT}\n"
+
 
 re: fclean all
 
